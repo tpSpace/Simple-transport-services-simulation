@@ -1,12 +1,15 @@
-public class Main implements Runnable{
+import java.util.ArrayList;
+public class Main {
     public static void main(String[] args){
-        Driver driver = new Driver(new Grab(),"John",new Visa(100.0f));
-        Customer customer = new Customer(driver,"Mary",new Visa(100.0f),10);
-        driver.setState("processing");
-        customer.info();
+       // make random number 3-10
+        int num = (int)(Math.random()*10)+3;
+        System.out.println("There are "+num+" threads");
+        Draw draw = new Draw(num);
+         for(int i=0;i<num;i++){
+                RunThread runThread = new RunThread(i);
+                runThread.start();
+         } 
+        
     }
-    @Override
-    public void run(){
-        System.out.println("Hello World");
-    }
+    
 }

@@ -1,9 +1,9 @@
 public class Grab implements Transportation {
     public Grab(){
-        System.out.println("Grab is a transportation service");
+        
     }
     public void Service(){
-        System.out.println("Grab is a transportation service");
+       
     }
     public float Pay(float distance){
 
