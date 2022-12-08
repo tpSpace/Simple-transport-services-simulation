@@ -1,7 +1,7 @@
 public class Main implements Runnable{
     public static void main(String[] args){
-        Driver driver = new Driver(new Grab(),"John",new Visa(100));
-        Customer customer = new Customer(driver,"Mary",new Visa(100),10);
+        Driver driver = new Driver(new Grab(),"John",new Visa(100.0f));
+        Customer customer = new Customer(driver,"Mary",new Visa(100.0f),10);
         driver.setState("processing");
         customer.info();
     }

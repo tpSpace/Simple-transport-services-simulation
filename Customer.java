@@ -15,13 +15,17 @@ public class Customer {
     public void Service(){
         driver.Service();
     }
+    public void setBalance(Payment payment,float balance){
+        payment.setBalance(balance);
+    }
+    public float getBalance(Payment payment){
+        return payment.getBalance();
+    }
     public void info(){
         System.out.println(name+" is a customer of "+driver.getName());
         System.out.println("Customer's balance is "+visa.getBalance());
-        this.transfer(visa,50f);
-        System.out.println("Customer's balance is "+visa.getBalance());
+        visa.transfer(visa, 50f,this, driver);
+        System.out.println("Customer's balance left "+visa.getBalance());
     }
-    public void transfer(Payment payment,float amount){
-        payment.transfer(payment.getBalance(),driver);
-    }
+    
 }
