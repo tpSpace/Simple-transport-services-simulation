@@ -24,8 +24,9 @@ public class Customer {
     public void info(){
         System.out.println(name+" is a customer of "+driver.getName());
         System.out.println("Customer's balance is "+visa.getBalance());
-        visa.transfer(visa, 50f,this, driver);
+        visa.transfer(40.0f, driver);
         System.out.println("Customer's balance left "+visa.getBalance());
+        System.out.println("Driver's balance is "+driver.getBalance());
     }
     
 }

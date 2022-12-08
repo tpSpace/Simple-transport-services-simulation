@@ -20,10 +20,10 @@ public class Driver {
     public String getState(){
         return state;
     }
-    public void setBalance(Payment payment,float balance){
-        payment.setBalance(balance);
+    public void setBalance(float balance){
+        visa.setBalance(balance);
     }
-    public float getBalance(Payment payment){
-        return payment.getBalance();
+    public float getBalance(){
+        return visa.getBalance();
     }
 }
