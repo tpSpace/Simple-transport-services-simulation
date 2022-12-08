@@ -14,4 +14,7 @@ public class Driver {
     public void Service(){
         transportation.Service();
     }
+    public String getName(){
+        return name;
+    }
 }

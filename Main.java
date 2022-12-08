@@ -3,6 +3,6 @@ public class Main {
         Driver driver = new Driver(new Grab(),"John",new Visa(100));
         Customer customer = new Customer(driver,"Mary",new Visa(100));
         driver.setState("processing");
-        
+        customer.info();
     }
 }
