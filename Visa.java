@@ -14,10 +14,9 @@ public class Visa implements Payment {
     public void setBalance(float balance) {
         this.balance = balance;
     }
-    public void transfer(float amount,Driver driver){
-        this.setBalance(this.getBalance()-amount);
-        driver.setBalance(driver.getBalance()+amount);
-        System.out.println("Run transfer method in Visa "+(this.getBalance()));
+    public void transfer(float amount,Customer customer){
+        this.setBalance(this.getBalance()+amount);
+        customer.setBalance(customer.getBalance()-amount);
     } 
    
 }

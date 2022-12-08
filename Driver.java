@@ -8,6 +8,10 @@ public class Driver {
         this.name = name;
         this.visa = visa;
     }
+    public void pay(float distance, Customer customer){
+        float amount = transportation.Pay(distance);
+        visa.transfer(amount, customer);
+    }
     public void setState(String state){
         this.state = state;
     }
