@@ -14,4 +14,11 @@ public class Visa implements Payment {
     public void setBalance(float balance) {
         this.balance = balance;
     }
+    public void transfer(float amount,Driver driver){
+        balance -= amount;
+        driver.setBalance(this,driver.getBalance(this)+amount);
+    }
+   
+    
+   
 }

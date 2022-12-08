@@ -17,4 +17,13 @@ public class Driver {
     public String getName(){
         return name;
     }
+    public String getState(){
+        return state;
+    }
+    public void setBalance(Payment payment,float balance){
+        payment.setBalance(balance);
+    }
+    public float getBalance(Payment payment){
+        return payment.getBalance();
+    }
 }

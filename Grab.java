@@ -15,4 +15,14 @@ public class Grab implements Transportation {
             return 0;
         }
     }
+    @Override
+    public float getBalance(Payment payment) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+    @Override
+    public void setBalance(Payment payment, float balance) {
+        // TODO Auto-generated method stub
+        
+    }
 }
