@@ -6,7 +6,7 @@ public class Draw {
     }
     public static void addThread(){
         
-        if(counter<numberThread){
+        if(counter<=numberThread){
             counter++;
         } else {
             drawTable();

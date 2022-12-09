@@ -4,13 +4,11 @@ public class Customer {
     private Payment visa;
     private String state;
     private float distance = 10f;
-    private int time;
     public Customer(Driver driver,String name,Payment visa,float distance){
         this.driver = driver;
         this.name = name;
         this.visa = visa;
         this.distance = distance;
-        this.time = time;
     }
     public void setState(String state){
         this.state = state;
